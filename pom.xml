@@ -8,7 +8,7 @@
         <version>2.1.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.wping</groupId>
+    <groupId>com.github.wpinggao</groupId>
     <artifactId>springboot-seed</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-seed</name>
@@ -43,6 +43,7 @@
     </profiles>
 
     <properties>
+        <encoding>UTF-8</encoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -96,7 +97,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.wping</groupId>
+            <groupId>com.github.wpinggao</groupId>
             <artifactId>component-shield</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -134,19 +135,19 @@
         </dependency>
 
         <dependency>
-            <groupId>com.wping</groupId>
+            <groupId>com.github.wpinggao</groupId>
             <artifactId>component-http</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.wping</groupId>
+            <groupId>com.github.wpinggao</groupId>
             <artifactId>component-redis</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.wping</groupId>
+            <groupId>com.github.wpinggao</groupId>
             <artifactId>component-base</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
@@ -381,5 +382,16 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
